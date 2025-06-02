@@ -1,0 +1,24 @@
+[project]
+name = 'Blockchain-Based-Entertainment-Consciousness-Gaming'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.community-building-contract]
+path = 'contracts/community-building-contract.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.game-design-contract]
+path = 'contracts/game-design-contract.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
